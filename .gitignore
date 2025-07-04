@@ -1,0 +1,83 @@
+# === Global ===
+*.log
+*.swp
+*.swo
+*.tmp
+*.bak
+*.pid
+*.old
+*.DS_Store
+*.sqlite3
+.env
+.env.*
+
+# === OS / Editor ===
+*.iml
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# === Ruby / Bundler ===
+*.gem
+*.rbc
+.bundle/
+vendor/bundle/
+.rvmrc
+.rbenv-version
+.ruby-version
+.ruby-gemset
+.yardoc
+_yardoc/
+coverage/
+tmp/
+.byebug_history
+
+# === Node / JS (for Webpacker / JS frontend) ===
+node_modules/
+yarn-error.log
+npm-debug.log
+public/packs/
+public/packs-test/
+public/assets/
+.sprockets-manifest*.json
+
+# === Rails Specific ===
+log/
+tmp/
+db/*.sqlite3
+db/*.sqlite3-journal
+db/schema.rb
+db/seeds.rb
+storage/
+public/assets/
+public/system/
+public/uploads/
+
+# === Rest App specific ===
+rest_app/log/
+rest_app/tmp/
+rest_app/vendor/bundle/
+rest_app/node_modules/
+rest_app/public/packs/
+rest_app/public/assets/
+rest_app/storage/
+
+# === GRPC App specific ===
+grpc_app/log/
+grpc_app/tmp/
+grpc_app/vendor/bundle/
+grpc_app/.ruby-version
+grpc_app/node_modules/
+
+# === Test / CI Artifacts ===
+coverage/
+spec/tmp/
+rspec_failures
+rerun.txt
+
+# === Docker ===
+*.bak
+*.tar
+*.gz
+docker-compose.override.yml
