@@ -7,12 +7,12 @@ OUTBOX_FILE = "outbox.log"
 TEMP_FILE   = "outbox_tmp.log"
 
 def send_to_rest_api(result)
-  uri = URI("http://localhost:4567/log_result")
+  uri = URI("http://localhost:3000/calculations")
   http = Net::HTTP.new(uri.host, uri.port)
   req = Net::HTTP::Post.new(uri.path, { 'Content-Type' => 'application/json' })
   req.body = { result: result }.to_json
   res = http.request(req)
-  res.code == "200"
+  res.code == "201"
 rescue => e
   puts "Failed to deliver: #{e.message}"
   false
