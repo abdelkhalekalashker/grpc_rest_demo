@@ -81,3 +81,10 @@ rerun.txt
 *.tar
 *.gz
 docker-compose.override.yml
+
+# Ignore Rails encrypted credentials
+grpc_app/config/master.key
+grpc_app/config/credentials.yml.enc
+
+rest_app/config/master.key
+rest_app/config/credentials.yml.enc
